@@ -43,12 +43,12 @@ NETWORK_CNVW2A2 = "cnvW2A2"
 NETWORK_LFCW1A1 = "lfcW1A1"
 NETWORK_LFCW1A2 = "lfcW1A2"
 
-if os.environ['BOARD'] == 'Ultra96':
-	PLATFORM="ultra96"
-elif os.environ['BOARD'] == 'Pynq-Z1' or os.environ['BOARD'] == 'Pynq-Z2':
-	PLATFORM="pynqZ1-Z2"
-else:
-	raise RuntimeError("Board not supported")
+#if os.environ['BOARD'] == 'Ultra96':
+PLATFORM="ultra96"
+#elif os.environ['BOARD'] == 'Pynq-Z1' or os.environ['BOARD'] == 'Pynq-Z2':
+#	PLATFORM="pynqZ1-Z2"
+#else:
+#	raise RuntimeError("Board not supported")
 
 BNN_ROOT_DIR = os.path.dirname(os.path.realpath(__file__))
 BNN_LIB_DIR = os.path.join(BNN_ROOT_DIR, 'libraries', PLATFORM)
